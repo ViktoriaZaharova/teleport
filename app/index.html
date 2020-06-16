@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Teleport</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__top">
+            <div class="language-box dropDown-wrapper">
+                <label class="language-box__btn currency-box">
+                    <select name="number" class="select-currency">
+                        <option selected="selected">ENG</option>
+                        <option>RUS</option>
+                        <option>UA</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="btn-burger btn-close">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <img src="img/preloader.svg" alt="">
+            <p>2020 © Teleport.io</p>
+        </div>
+        <ul class="menu">
+            <li class="menu-item"><a href="#" class="active menu-links">О КОМПАНИИ</a></li>
+            <li class="menu-item"><a href="#" class="menu-links">FAQ</a></li>
+            <li class="menu-item"><a href="#" class="menu-links">НОВОСТИ</a></li>
+            <li class="menu-item"><a href="#" class="menu-links">КОНТАКТЫ</a></li>
+        </ul>
+        <a href="#" class="btn btn-border">РЕГИСТРАЦИЯ</a>
+        <a href="#" class="btn btn-accent">ВХОД</a>
+    </div>
+</div>
+
+<header>
+    <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <ul class="menu">
+            <li class="menu-item"><a href="#" class="menu-links">НОВОСТИ</a></li>
+            <li class="menu-item"><a href="#" class="active menu-links">О КОМПАНИИ</a></li>
+            <li class="menu-item"><a href="#" class="menu-links">FAQ</a></li>
+            <li class="menu-item"><a href="#" class="menu-links">КОНТАКТЫ</a></li>
+        </ul>
+
+        <div class="language-box dropDown-wrapper">
+            <label class="language-box__btn currency-box">
+                <select name="number" class="select-currency">
+                    <option selected="selected">ENG</option>
+                    <option>RUS</option>
+                    <option>UA</option>
+                </select>
+            </label>
+        </div>
+
+        <a href="#" class="links">ВХОД</a>
+
+        <a href="#" class="btn btn-accent">РЕГИСТРАЦИЯ</a>
+
+        <div class="btn-burger btn-open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<main class="main-home">
+    <div class="container">
+        <div class="main-content">
+            <h1>Платежная платформа
+                будущего</h1>
+
+            <div class="tabs">
+                <ul class="tabs__caption">
+                    <li class="active">Покупка</li>
+                    <li>Продажа</li>
+                </ul>
+                <div class="tabs__content active">
+                    <form method="post" class="exchange-wrapper form">
+                        <div class="exchange-box">
+                            <div class="item">
+                                <p>Отдаете</p>
+                                <label class="val-label"><input type="text" name="value" value="100"></label>
+                            </div>
+
+                            <div class="currency-box">
+                                <label>
+                                    <select name="number" class="select-currency">
+                                        <option selected="selected">USD</option>
+                                        <option>EUR</option>
+                                        <option>BTC</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="exchange-box">
+                            <div class="item">
+                                <p>Получаете</p>
+                                <div class="val-exchange">0.009449</div>
+                            </div>
+
+                            <div class="currency-box">
+                                <label>
+                                    <select name="number" class="select-currency">
+                                        <option selected="selected">BTC</option>
+                                        <option>EUR</option>
+                                        <option>USD</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-accent">КУПИТЬ</button>
+
+                    </form>
+
+                    <div class="course-exchange"> 1 BTC = 10 041.1688 USD</div>
+
+                    <div class="description-exchange">
+                        <p>0.009449 покупка с банковской карты</p>
+                        <p>Все варианты пополнения аккаунта смотрите <a href="#" class="links-accent">здесь.</a></p>
+                    </div>
+
+                    <a href="#" class="btn btn-accent d-mobile">КУПИТЬ</a>
+                </div>
+                <div class="tabs__content">
+                    <form method="post" class="exchange-wrapper form">
+                        <div class="exchange-box">
+                            <div class="item">
+                                <p>Продаете</p>
+                                <label class="val-label"><input type="text" name="value" value="100"></label>
+                            </div>
+
+                            <div class="currency-box">
+                                <label>
+                                    <select name="number" class="select-currency">
+                                        <option selected="selected">USD</option>
+                                        <option>EUR</option>
+                                        <option>BTC</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="exchange-box">
+                            <div class="item">
+                                <p>Получаете</p>
+                                <div class="val-exchange">0.009449</div>
+                            </div>
+
+                            <div class="currency-box">
+                                <label>
+                                    <select name="number" class="select-currency">
+                                        <option selected="selected">BTC</option>
+                                        <option>EUR</option>
+                                        <option>USD</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-accent">КУПИТЬ</a>
+
+                    </form>
+
+                    <div class="course-exchange"> 1 BTC = 10 041.1688 USD</div>
+
+                    <div class="description-exchange">
+                        <p>0.009449 покупка с банковской карты</p>
+                        <p>Все варианты пополнения аккаунта смотрите <a href="#" class="links-accent">здесь.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-img"><img src="img/img-bg1.png" alt=""></div>
+
+    <div class="main-bg-figure1 main-bg-figure"><img src="img/img-bg2.png" alt=""></div>
+    <div class="main-bg-figure2 main-bg-figure"><img src="img/img-bg3.png" alt=""></div>
+
+    <div class="ticker">
+        <span class="name-currency">USD/BTC</span>
+        <span class="value-currency">9823.32</span>
+        <span class="change-currency change-currency-height">+0,.38%</span>
+        <span class="name-currency">USD/BTC</span>
+        <span class="value-currency">9823.32</span>
+        <span class="change-currency change-currency-lowering">-0,.38%</span>
+        <span class="name-currency">USD/BTC</span>
+        <span class="value-currency">9823.32</span>
+        <span class="change-currency change-currency-height">+0,.38%</span>
+        <span class="name-currency">USD/BTC</span>
+        <span class="value-currency">9823.32</span>
+        <span class="change-currency change-currency-lowering">-0,.38%</span>
+        <span class="name-currency">USD/BTC</span>
+        <span class="value-currency">9823.32</span>
+        <span class="change-currency change-currency-height">+0,.38%</span>
+        <span class="name-currency">USD/BTC</span>
+        <span class="value-currency">9823.32</span>
+        <span class="change-currency change-currency-lowering">-0,.38%</span>
+    </div>
+</main>
+
+<section class="about">
+    <div class="about-img"><img src="img/img-bg4.png" alt=""></div>
+    <div class="main-bg-figure1 main-bg-figure"><img src="img/figure2.svg" alt=""></div>
+    <div class="main-bg-figure2 main-bg-figure"><img src="img/figure1.svg" alt=""></div>
+
+    <div class="container">
+
+        <div class="about-content">
+            <h2>Онлайн финансы это просто</h2>
+
+            <div class="description">
+                <p>Управляйте вашими онлайн-финансами с помощью Teleport. Получайте выплаты, пользуйтесь виртуальными
+                    кошельками, пополняйте счет и выводите средства множеством удобных способов. Быстро. Выгодно. Без
+                    проблем.</p>
+            </div>
+
+            <a href="#" class="btn btn-accent">СОЗДАТЬ АККАУНТ</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="capabilities">
+    <div class="container">
+        <h2>Что может <img src="img/logo.svg" alt="">?</h2>
+
+        <div class="capabilities-content">
+            <div class="capabilities-box">
+                <div class="capabilities-icon"><img src="img/icon1.svg" alt=""></div>
+                <div class="capabilities-content">
+                    <h3>Самый выгодный для пополнения курс </h3>
+                    <div class="text">
+                        <p>Банковские карты и переводы, онлайн-банкинг, е-валюты, наличные и многое другое. Всегда
+                            найдется способ быстро и выгодно пополнить ваш счет в advcash, где бы вы ни были.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="capabilities-box">
+                <div class="capabilities-icon"><img src="img/icon2.svg" alt=""></div>
+                <div class="capabilities-content">
+                    <h3>Удобство в использовании</h3>
+                    <div class="text">
+                        <p>Банковские карты и переводы, онлайн-банкинг, е-валюты, наличные и многое другое. Всегда
+                            найдется способ быстро и выгодно.</p>
+                    </div>
+
+                    <a href="#" class="btn btn-accent">СОЗДАТЬ АККАУНТ</a>
+                </div>
+            </div>
+            <div class="capabilities-box">
+                <div class="capabilities-icon"><img src="img/icon3.svg" alt=""></div>
+                <div class="capabilities-content">
+                    <h3>Моментальный вывод средств</h3>
+                    <div class="text">
+                        <p>Банковские карты и переводы, онлайн-банкинг, е-валюты, наличные и многое другое. Всегда
+                            найдется способ быстро и выгодно пополнить ваш счет в advcash, где бы вы ни были.</p>
+                    </div>
+                    <a href="#" class="btn btn-accent">СОЗДАТЬ АККАУНТ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="news">
+    <div class="main-bg-figure1 main-bg-figure"><img src="img/figure3.svg" alt=""></div>
+    <div class="main-bg-figure2 main-bg-figure"><img src="img/figure4.svg" alt=""></div>
+
+    <div class="container">
+        <h2>Новости компании</h2>
+
+        <div class="line-title">
+            <div class="description-title">Банковские карты и переводы, онлайн-банкинг, е-валюты, наличные и многое
+                другое.
+            </div>
+
+            <a href="#" class="btn btn-accent"><span>ЧИТАТЬ ВСЕ</span></a>
+        </div>
+
+        <div class="news-wrapper">
+            <div class="news-box">
+                <div class="news-box__img"><img src="img/news1.jpg" alt=""></div>
+                <div class="news-box__content">
+                    <h3>Новость текущего дня, заголовок</h3>
+                    <div class="text">
+                        <p>Банковские карты и переводы, онлайн-банкинг, е-валюты, наличные и многое другое. Всегда
+                            найдется способ быстро и выгодно пополнить ваш счет в advcash, где бы вы ни были.</p>
+                    </div>
+                    <div class="date">23.06.2020</div>
+                </div>
+                <a href="#" class="btn btn-accent">ЧИТАТЬ</a>
+            </div>
+
+            <div class="news-box">
+                <div class="news-box__img"><img src="img/news2.jpg" alt=""></div>
+                <div class="news-box__content">
+                    <h3>Новость текущего дня, заголовок</h3>
+                    <div class="text">
+                        <p>Банковские карты и переводы, онлайн-банкинг, е-валюты, наличные и многое другое. Всегда
+                            найдется способ быстро и выгодно пополнить ваш счет в advcash, где бы вы ни были.</p>
+                    </div>
+                    <div class="date">03.05.2020</div>
+                </div>
+                <a href="#" class="btn btn-accent">ЧИТАТЬ</a>
+            </div>
+
+            <div class="news-box">
+                <div class="news-box__img"><img src="img/news3.jpg" alt=""></div>
+                <div class="news-box__content">
+                    <h3>Новость текущего дня, заголовок</h3>
+                    <div class="text">
+                        <p>Банковские карты и переводы, онлайн-банкинг, е-валюты, наличные и многое другое. Всегда
+                            найдется способ быстро и выгодно пополнить ваш счет в advcash, где бы вы ни были.</p>
+                    </div>
+                    <div class="date">12.03.2020</div>
+                </div>
+                <a href="#" class="btn btn-accent">ЧИТАТЬ</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+
+            <div class="subscribe-box">
+                <h3>Следите за актуальными новостями</h3>
+                <div class="text">
+                    <p>Вы можете подписаться на нашу рассылку, чтобы всегда быть в курсе последних новостей и
+                        обновлений.</p>
+                </div>
+
+                <form method="post" class="exchange-wrapper form-subscribe">
+                    <div class="exchange-box">
+                        <div class="item">
+                            <p>Введите вашу почту</p>
+                            <label><input type="text" name="mail" placeholder="@E-mail"></label>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="btn btn-accent">ПОДПИСАТЬСЯ</a>
+
+                </form>
+            </div>
+
+            <div class="footer-top__wrapper">
+                <div class="footer-top__wrapper-top">
+                    <div class="footer-box">
+                        <h4>Поддержка</h4>
+                        <a href="mailto:Support@teleport.io" class="mail">Support@teleport.io</a>
+
+                        <div class="schedule">Пн-Пт 09:00-18:00 МСК</div>
+                        <a href="tel:+79257055386" class="phone">+7 925 705 53 86</a>
+                    </div>
+                    <div class="footer-box">
+                        <h4>Teleport</h4>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__links">О компании</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__links">Контакты</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__links">Новости</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box">
+                        <h4>Ссылки</h4>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__links">Ссылка первая</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__links">Вторая ссылка</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box">
+                        <h4>Помощь</h4>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__links">FAQ</a></li>
+                            <li class="footer-menu__item d-mobile"><a href="#" class="footer-menu__links">Ссылка первая</a></li>
+                            <li class="footer-menu__item d-mobile"><a href="#" class="footer-menu__links">Вторая ссылка</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-top__wrapper-bottom">
+                    <div class="box-left">
+                        <ul class="list-social">
+                            <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+                            <li><a href="#"><img src="img/insta.svg" alt=""></a></li>
+                            <li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+                        </ul>
+
+                        <ul class="menu-doc">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">AML/KYC Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="copyright">
+                        <img src="img/preloader.svg" alt="">
+                        <p>2020 © Teleport.io</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-bottom"></div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery.simplemarquee.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

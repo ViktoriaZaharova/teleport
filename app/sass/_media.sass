@@ -1,0 +1,591 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width: 1800px)
+  header
+    .container
+      padding: 0 15px
+
+
+@media only screen and (max-width: 1500px)
+  .container
+    padding: 0 15px
+
+  .about-img
+    width: 700px
+
+  .about .main-bg-figure1
+    width: 900px
+    height: 900px
+
+  .about .main-bg-figure2
+    width: 500px
+    height: 700px
+
+  .about
+    padding: 0 0 600px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1400px)
+  .news-box
+    max-width: 390px
+
+@media only screen and (max-width: 1300px)
+  .footer-box h4
+    font-size: 32px
+
+  .menu-doc li
+    margin: 0 12px 0 0
+
+  .subscribe-box
+    padding: 0 50px 0 0
+
+  .footer-top__wrapper
+    padding: 0 0 0 50px
+
+@media only screen and (max-width: 1260px)
+  .capabilities-box
+    width: 350px
+
+  h3
+    font-size: 32px
+    line-height: normal
+
+@media only screen and (max-width: 1199px)
+  .menu-item
+    margin: 0 25px 0 0
+
+    &:last-child
+      margin: 0
+
+  .menu-links
+    padding: 0 0 15px
+    font-size: 14px
+
+  .main-img
+    width: 540px
+    right: -146px
+
+  h2
+    font-size: 60px
+
+  .about
+    padding: 0 0 300px
+
+
+
+  .capabilities
+    background: linear-gradient(127deg, #000525 0%, #0f4c81 100%)
+
+  .news .main-bg-figure1
+    width: 400px
+
+  .news .main-bg-figure2
+    width: 526px
+
+  .news-box
+    max-width: 32%
+
+  .subscribe-box
+    max-width: 400px
+    padding: 0 13px 0 0
+
+
+  .footer-top__wrapper
+    width: calc(100% - 400px)
+    padding: 0 0 0 13px
+
+  footer
+    .exchange-box:nth-child(1)
+      padding: 0 15px
+
+
+@media only screen and (max-width: 1060px)
+  .about-img
+    width: 504px
+    top: -110px
+    transform: rotate(-40deg) translate(-50%,0)
+    left: 50%
+
+
+  .about-content
+    max-width: none
+
+  .about-content .description
+    margin: 19px 0 374px
+
+  .about .btn
+    margin: 0 auto
+
+  .capabilities-box
+    width: 50%
+    margin: 0 0 30px
+
+  .capabilities-content
+    justify-content: space-around
+
+  .capabilities
+    background: linear-gradient(120deg, #000525 0%, #0f4c81 100%)
+
+  .news .main-bg-figure1, .news .main-bg-figure2
+    display: none
+
+  .news-box
+    max-width: 49%
+
+  .news-wrapper
+    justify-content: space-around
+
+  .footer-top:before
+    height: 100%
+    bottom: 0
+    background: linear-gradient(144deg, #000525 0%, #0f4c81 100%)
+
+
+  .news
+    &:before
+      width: 100%
+      height: calc(100% - 80px)
+      top: 80px
+      background: linear-gradient(60deg, rgba(0,5,37,1) 0%,rgba(15,76,129,1) 100%)
+      content: ''
+      position: absolute
+
+  .subscribe-box
+    max-width: none
+    padding: 0
+    border: none
+
+  .footer-top__wrapper
+    width: 100%
+    padding: 0
+    margin: 25px 0 0
+
+  .footer-bottom
+    display: none
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 920px)
+  .btn-burger
+    display: flex
+
+  .menu
+    display: none
+
+  header
+    padding: 22px 0
+
+    .logo
+      margin: 0 auto 0 0
+
+    .btn, .links
+      display: none
+
+  .language-box__btn
+    margin: 0 17px 0 0
+
+  .about .main-bg-figure1
+    width: 700px
+    height: 700px
+    top: -148px
+
+@media only screen and (max-width: 768px)
+  h1
+    font-size: 45px
+
+  h2
+    font-size: 45px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 710px)
+  .capabilities h2 img
+    width: 160px
+    margin: 0 10px -14px
+
+  h3
+    font-size: 30px
+
+  .news-box
+    max-width: 100%
+    height: auto
+
+  .news-box__img
+    height: 112px
+    min-height: 112px
+
+  .news-box__content
+    padding: 18px 22px
+    h3
+      margin: 0 0 9px
+
+  .news-box .btn
+    height: 56px
+    min-height: 56px
+    font-size: 17px
+
+  .news
+    h2
+      font-size: 41px
+      margin: 0 0 14px
+    .line-title
+      margin: 0 0 57px
+      .btn
+        background: transparent
+        height: 55px
+        border: 1px solid #fff
+        font-size: 15px
+        margin: 0 auto
+        max-width: 390px
+        width: 100%
+        span
+          &:after
+            display: none
+    .description-title
+      order: 1
+      margin: 20px 0 0
+      max-width: none
+      font-weight: 300
+
+
+@media only screen and (max-width: 620px)
+  .exchange-wrapper .btn
+    display: none
+
+  .tabs__content .d-mobile
+    display: flex
+    width: 100%
+    margin: 16px auto 0
+    height: 55px
+    border-radius: 20px
+    font-size: 17px
+
+
+  .tabs__content
+    max-width: 390px
+
+  .exchange-box:nth-child(2)
+    border:
+      right: 1px solid #fff
+      radius: 0 20px 20px 0
+
+  .exchange-box
+    padding: 0 15px
+    height: 55px
+    background: rgba(#05193E, .94)
+    p
+      font-size: 12px
+      opacity: .46
+    input
+      font-size: 15px
+
+  .val-exchange
+    font-size: 15px
+
+  .currency-box .ui-button
+    font-size: 12px
+
+  .language-box
+    .currency-box .ui-button
+      font-size: 14px
+
+  .exchange-wrapper
+    height: 55px
+
+  .description-exchange
+    padding: 0
+    font-size: 12px
+    line-height: normal
+    p
+      margin: 0 0 2px
+
+  .course-exchange
+    font-size: 12px
+    margin: 14px 0 -15px
+
+  .tabs__caption
+    margin: 154px 0 14px
+    li
+      height: 55px
+      width: 195px
+      font-size: 15px
+
+  main:before
+    display: none
+
+  .main-home
+    padding: 85px 0 20px
+
+  .main-img
+    opacity: .37
+    top: 0
+    transform: translate(0)
+
+  h1
+    font-size: 34px
+
+  h2
+    font-size: 38px
+
+  .main-bg-figure2, .about .main-bg-figure1
+    display: none
+
+  .main-bg-figure1
+    width: 112px
+    top: 186px
+    left: 28px
+    transform: rotate(-20deg)
+
+  .ticker
+    margin: 28px auto
+    background: #031539
+    font-size: 14px
+    padding: 7px 0
+
+  .change-currency
+    margin: 0 8px 0 0
+
+  .name-currency
+    font-size: 14px
+
+  .value-currency
+    margin: 0 20px
+
+  .about .main-bg-figure2
+    width: 845px
+    right: -155px
+    top: 189px
+    display: block
+    height: 1292px
+    background: url("../img/figure6.svg") no-repeat center
+      size: contain
+    img
+      display: none
+
+  .about
+    background: linear-gradient(60deg, #000525 0%, #0f4c81 100%)
+    padding: 0 0 49px
+    .description
+      font-size: 14px
+      line-height: normal
+
+  .capabilities
+    margin: 0
+
+  .capabilities
+    background: linear-gradient(105deg, #000525 0%, #0f4c81 100%)
+    h2
+      margin: 0 auto 50px
+
+  .capabilities-box
+    flex-direction: row
+    position: relative
+    width: 100%
+    text-align: left
+    max-width: 100%
+    margin: 0 0 68px
+    &:last-child
+      margin: 0
+    h3
+      max-width: 267px
+      margin: 0 auto 30px 0
+    .text
+      max-width: none
+    &:nth-child(2)
+      margin: 0 0 30px
+      .btn
+        display: none
+      .capabilities-icon
+        right: auto
+        left: 20px
+      h3
+        margin: 0 0 30px auto
+    &:last-child
+      .btn
+        display: flex
+        width: 100%
+        margin: 29px 0 0
+        height: 55px
+        font-size: 17px
+        border-radius: 20px
+
+  .btn
+    border-radius: 20px
+
+  .capabilities-icon
+    position: absolute
+    right: 20px
+    top: -40px
+    width: 56px
+    margin: 0
+
+  .news-box .btn
+    border-radius: 0 0 20px 20px
+
+  .news-box__content .date
+    font-size: 17px
+
+  .news:before
+    background: linear-gradient(78deg, #000525 0%, #0f4c81 100%)
+
+  .footer-top:before
+    background: linear-gradient(116deg, #000525 0%, #0f4c81 100%)
+
+  footer
+    .exchange-wrapper
+      height: 53px
+      .btn
+        display: flex
+        width: 194px
+    .exchange-box
+      background: rgba(#fff, .27)
+      height: 53px
+      width: 193px
+
+  .copyright
+    width: 139px
+    font-size: 3px
+    p
+      left: 48px
+
+  .menu-doc li a
+    font-size: 12px
+
+  .footer-box h4
+    margin: 0 0 21px
+
+  .footer-box
+    &:nth-child(2), &:nth-child(3)
+      display: none
+
+  .footer-menu__item.d-mobile
+    display: block
+
+  .mail
+    font-size: 18px
+    margin: 0 0 6px
+
+  .schedule
+    font-size: 14px
+
+  .phone
+    font-size: 23px
+
+  .footer-menu__item
+    margin: 0 0 10px
+
+  .footer-menu__links
+    font-size: 14px
+
+  .subscribe-box
+    .text
+      font-size: 14px
+      line-height: 25px
+    h3
+      margin: 0 0 27px
+
+@media only screen and (max-width: 500px)
+  .footer-top__wrapper-bottom
+    flex-direction: column
+    align-items: center
+    margin: 43px 0 0
+    .copyright
+      margin: 0 auto 40px
+      order: -1
+
+  .list-social
+    justify-content: center
+    li
+      margin: 0 35px 0 0
+      a
+        width: 44px
+        height: 44px
+
+  .footer-top
+    padding: 0 0 98px
+    &:before
+      background: linear-gradient(111deg, #000525 0%, #0f4c81 100%)
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 450px)
+  .capabilities
+    padding: 0 0 45px
+    h2
+      img
+        width: 120px
+
+  .news
+    margin: 0
+    &:before
+      top: 0
+      height: 100%
+      background: linear-gradient(80deg, #000525 0%, #0f4c81 100%)
+
+@media only screen and (max-width: 400px)
+  .capabilities-box h3
+    max-width: 220px
+    font-size: 28px
+
+  .capabilities h2
+    font-size: 32px
+    img
+      margin: 0 10px -6px
+
+
+
+@media only screen and (max-width: 380px)
+  .logo
+    width: 133px
+
+  .language-box__btn
+    padding: 0 12px 0 0
+
+    .ui-selectmenu-text
+      font-size: 14px
+
+  .main-img
+    width: 400px
+    top: 50px
+
+  .exchange-box
+    width: 50%
+
+  .exchange-box, .val-exchange
+    font-size: 12px
+
+  .val-label
+    width: 60px
+
+  .about-img
+    top: 0
+
+  .capabilities
+    background: linear-gradient(110deg, #000525 0%, #0f4c81 100%)
+    h2
+      font-size: 28px
+      img
+        width: 90px
+
+  .capabilities-box h3
+    font-size: 24px
+    max-width: none
+    width: calc(100% - 90px)
+
+  footer .exchange-wrapper .btn
+    padding: 0 5px
+    width: 170px
+
+  .footer-box
+    margin: 0 0 30px
+
+
+  .footer-top__wrapper-bottom
+    margin: 0
+
+  .menu-doc li
+    margin: 0 10px 0 0
+

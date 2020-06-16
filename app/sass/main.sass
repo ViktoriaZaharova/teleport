@@ -1,0 +1,872 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  color: #fff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+.container
+  max-width: 1480px
+  width: 100%
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  z-index: 1
+
+a
+  display: block
+  transition: .3s ease
+  text-decoration: none
+  outline: none
+  &:hover, &:focus
+    text-decoration: none
+
+.logo
+  width: 152px
+
+h1
+  color: #fff
+  font-size: 80px
+  font-weight: bold
+  width: 100%
+
+h2
+  font-size: 80px
+  font-weight: bold
+  color: #fff
+  width: 100%
+
+h3
+  font-size: 37px
+  font-weight: bold
+  margin: 0 auto 31px
+  line-height: 45px
+
+.d-mobile
+  display: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 15px
+  font-weight: bold
+  text-transform: uppercase
+  color: #fff
+  text-align: center
+  padding: 15px 17px
+  height: 48px
+
+.btn-accent
+  background: #1E9BF9
+  border-radius: 6px
+  &:hover
+    background: #1b8add
+
+.links-accent
+  text-decoration: underline
+  color: #1E9BF9
+
+.btn-burger
+  display: none
+  background: #1E9BF9
+  border-radius: 6px
+  width: 40px
+  height: 40px
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  span
+    display: block
+    background: #fff
+    width: 20px
+    height: 2px
+    border-radius: 6px
+    margin: 0 0 4px
+    &:last-child
+      margin: 0
+
+.btn-border
+  border: 1px solid #fff
+    radius: 20px
+
+.mobile-menu
+  position: fixed
+  background: #04173D
+  right: 0
+  top: 0
+  z-index: 5
+  height: 100%
+  width: 261px
+  display: none
+  box-shadow: 0 -10px 0 0 rgba(#000,.66)
+  .copyright
+    width: 102px
+    margin: 0 auto 16px
+    font-size: 2px
+    p
+      left: 36px
+  .menu
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin: 0 0 39px
+  .menu-item
+    margin: 0 0 13px
+    &:last-child
+      margin: 0
+  .menu-links
+    font-size: 28px
+    padding: 0 0 5px
+    border: none
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translate(-50%,0)
+      width: 100%
+      height: 5px
+      background: transparent
+      transition: .3s ease
+      border-radius: 6px
+  .active.menu-links
+    &:before
+      background: #1E9BF9
+    &:first-letter
+      font-size: 56px
+  .btn
+    height: 55px
+    margin: 0 0 24px
+    border-radius: 20px
+    &:last-child
+      margin: 0
+
+
+
+.mobile-menu__wrapper
+  display: flex
+  flex-direction: column
+  padding: 20px
+  height: 100%
+  overflow-y: auto
+
+.mobile-menu__top
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin: 0 0 23px
+  .ui-selectmenu-text
+    font-size: 14px
+
+
+//header
+header
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 3
+  padding: 30px 0 25px
+  .container
+    max-width: 1750px
+    align-items: center
+  .links
+    color: #fff
+    text-transform: uppercase
+    font-weight: bold
+  .btn
+    margin: 0 0 0 44px
+
+.menu
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+  margin: 0 auto
+
+.menu-links
+  font-size: 16px
+  font-weight: bold
+  color: #FFFFFF
+  text-transform: uppercase
+  padding: 0 0 30px
+  border-bottom: 2px solid transparent
+  margin: 0 auto
+  &:hover
+    border-color: #1E9BF9
+
+.menu-item
+  margin: 0 65px 0 0
+  &:last-child
+    margin: 0
+
+.menu-links.active
+  border-color: #1E9BF9
+  &:first-letter
+    font-size: 30px
+
+.dropDown-wrapper
+  position: relative
+
+.language-box__btn
+  font-size: 15px
+  font-weight: bold
+  color: #fff
+  padding: 0 20px 0 0
+  margin: 0 23px 0 0
+  border:
+    right: 1px solid rgba(#fff, .15)
+  cursor: pointer
+
+//main
+.main-home
+  padding: 263px 0 27px
+  color: #fff
+
+main
+  position: relative
+  background: linear-gradient(135deg, rgba(0,5,37,1) 0%,rgba(15,76,129,1) 100%)
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: url("../img/bg1.png") no-repeat center
+      size: cover
+
+.main-bg-figure
+  position: absolute
+
+.main-bg-figure1
+  width: 421px
+  left: -295px
+  bottom: 50px
+
+.main-bg-figure2
+  right: -180px
+  bottom: 50px
+  width: 381px
+
+
+.main-img
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translate(0,-50%)
+
+.main-content
+  max-width: 920px
+  width: 100%
+
+.tabs__content
+  display: none
+  flex-direction: column
+  align-items: flex-start
+  max-width: 705px
+  width: 100%
+  .d-mobile
+    display: none
+
+.tabs__content.active
+  display: flex
+
+.tabs__caption
+  display: flex
+  align-items: center
+  margin: 35px 0
+  li
+    cursor: pointer
+    transition: .3s ease
+    font-size: 18px
+    font-weight: bold
+    height: 65px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    width: 145px
+    border: 1px solid #fff
+    background: rgba(#fff, .27)
+    &:last-child
+      margin: 0
+      border-radius: 0 20px 20px 0
+      border-left: none
+    &:nth-child(1)
+      border-radius: 20px 0 0 20px
+      border-right: none
+  .active
+    background: #1E9BF9
+    border-color: #1E9BF9
+
+.exchange-wrapper
+  display: flex
+  align-items: stretch
+  height: 65px
+  max-width: 705px
+  width: 100%
+  .btn
+    border-radius: 0 20px 20px 0
+    width: 235px
+    border: 1px solid #1E9BF9
+    height: 100%
+
+.exchange-box
+  border: 1px solid #fff
+  box-sizing: border-box
+  background: rgba(#fff, .27)
+  width: 233px
+  padding: 0 29px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &:nth-child(1)
+    border-radius: 20px 0 0 20px
+  &:nth-child(2)
+    border:
+      right: none
+      left: none
+  p
+    font-size: 15px
+    opacity: .15
+    font-weight: 300
+    margin: 0 0 5px
+  input
+    font-size: 20px
+    background: transparent
+
+
+.currency-box
+  .ui-selectmenu-button.ui-button
+    width: auto
+    padding: 0
+  .ui-button
+    background: transparent
+    color: #fff
+    font-size: 18px
+    font-weight: bold
+    border: none
+      radius: 0
+    margin: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: row-reverse
+    &:hover, &:focus
+      border: none
+      box-shadow: none
+      outline: none
+    .ui-icon
+      background: url("../img/arrow-bottom.svg") no-repeat center
+        size: contain
+      width: 11px
+      height: 4px
+    .ui-selectmenu-text
+      margin: 0 10px 0 0
+      order: 1
+
+
+.ui-widget.ui-widget-content
+  border: none
+    radius: 0
+  background: rgba(#fff, .27)
+  color: #fff
+  
+.ui-state-active, .ui-widget-content .ui-state-active
+  background: #1E9BF9
+
+.val-exchange
+  font-size: 20px
+  font-weight: 300
+
+input
+  outline: none
+  box-sizing: border-box
+  border: none
+    radius: 0
+  padding: 0
+  font-family: $default-font
+  font-weight: 300
+  color: #fff
+  width: 100%
+  &::placeholder
+    color: #fff
+
+label
+  display: block
+
+.val-label
+  width: 100px
+
+.course-exchange
+  margin: 10px 0 0
+  width: 100%
+  text-align: right
+  font-size: 17px
+  font-weight: bold
+
+.description-exchange
+  padding: 0 0 0 30px
+  font-size: 17px
+  font-weight: 300
+  p
+    margin: 0 0 11px
+    &:last-child
+      margin: 0
+  a
+    display: inline
+
+.ticker
+  margin: 245px auto 0
+  width: 100%
+  z-index: 1
+  display: flex
+  align-items: center
+  font-size: 18px
+
+
+.name-currency
+  font-size: 18px
+  font-weight: 500
+
+.value-currency
+  font-weight: bold
+  margin: 0 23px
+
+.change-currency
+  font-weight: 300
+  margin: 0 45px 0 0
+
+.change-currency-height
+  color: #1E9BF9
+
+.change-currency-lowering
+  color: #FF1D1D
+
+//about
+.about
+  position: relative
+  background: linear-gradient(45deg, rgba(0,5,37,1) 0%,rgba(15,76,129,1) 100%)
+  padding: 0 0 676px
+  .container
+    z-index: 2
+  .btn
+    width: 190px
+  .main-bg-figure1
+    top: -348px
+    left: 50%
+    transform: translate(-50%,0)
+    width: 1476px
+    height: 1476px
+  .main-bg-figure2
+    width: 625px
+    height: 956px
+    top: -30px
+    right: -197px
+    left: auto
+
+.about-img
+  position: absolute
+  left: -70px
+  top: -175px
+  z-index: 2
+
+.about-content
+  max-width: 820px
+  margin: 0 0 0 auto
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  .description
+    margin: 42px 0
+    font-size: 17px
+    font-weight: 300
+    line-height: 30px
+
+//capabilities
+.capabilities
+  background: linear-gradient(142deg, rgba(0,5,37,1) 0%,rgba(15,76,129,1) 100%)
+  padding: 0 0 328px
+  margin: -97px 0 0
+  z-index: 1
+  h2
+    display: flex
+    align-items: center
+    text-align: center
+    justify-content: center
+    img
+      width: 340px
+      margin: 0 20px -19px
+
+.capabilities-content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+
+.capabilities-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 407px
+  text-align: center
+  width: 100%
+  margin: 33px 0 0
+  font-size: 17px
+  font-weight: 300
+  line-height: 30px
+  .btn
+    margin: 40px auto 0
+    width: 190px
+  &:nth-child(2)
+    margin: 0
+
+  .text
+    max-width: 370px
+    margin: 0 auto
+  &:last-child
+    .btn
+      display: none
+
+
+.capabilities-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 28px
+
+//news
+.news
+  z-index: 1
+  position: relative
+  margin: -158px 0 0
+  .main-bg-figure1
+    left: -65px
+    top: -80px
+    width: 530px
+    height: 528px
+  .main-bg-figure2
+    right: -356px
+    top: 0
+    width: 726px
+    height: 726px
+  h2
+    text-align: center
+    margin: 0 auto 23px
+  .line-title
+    max-width: 750px
+    width: 100%
+    margin: 0 auto 60px
+    .btn
+      width: 190px
+      span
+        display: flex
+        align-items: center
+        &:after
+          content: ''
+          width: 21px
+          height: 2px
+          background: #fff
+          margin: 0 0 0 10px
+          display: inline-block
+          border-radius: 4px
+
+
+
+
+.line-title
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+
+  margin: 0 auto
+
+.description-title
+  font-size: 17px
+  font-weight: 500
+  max-width: 400px
+  width: 100%
+  line-height: 30px
+
+.news-wrapper
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+
+.news-box
+  max-width: 459px
+  width: 100%
+  height: 638px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  overflow: hidden
+  border-radius: 20px
+  background: #4C698A
+  margin: 0 0 45px
+  .btn
+    width: 100%
+    height: 66px
+    min-height: 66px
+
+.news-box__img
+  width: 100%
+  height: 230px
+  min-height: 230px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.news-box__content
+  width: 100%
+  height: 100%
+  padding: 16px 26px 21px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  .text
+    font-size: 17px
+    font-weight: 300
+    line-height: 30px
+  .date
+    margin: auto 0 0 auto
+    font-size: 20px
+
+
+
+
+//footer
+footer
+  position: relative
+
+.footer-bottom
+  height: 92px
+  background: #020E31
+
+.footer-top
+  padding: 0 0 37px
+  .container
+    align-items: stretch
+    justify-content: space-between
+  &:before
+    content: ''
+    position: absolute
+    bottom: 92px
+    left: 0
+    width: 100%
+    height: 1172px
+    background: linear-gradient(40deg, rgba(0,5,37,1) 0%,rgba(15,76,129,1) 100%)
+
+.subscribe-box
+  padding: 0 75px 0 0
+  max-width: 540px
+  width: 100%
+  border:
+    right: 1px solid rgba(#fff, .15)
+  .text
+    font-size: 17px
+    line-height: 30px
+    font-weight: 500
+    margin: 0 0 34px
+
+
+.footer-top__wrapper
+  padding: 0 0 0 75px
+  width: calc(100% - 540px)
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+
+.footer-top__wrapper-top
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.footer-box
+  h4
+    color: rgba(#fff, .5)
+    font-size: 37px
+    font-weight: bold
+    margin: 0 0 34px
+    line-height: 45px
+
+.schedule
+  color: rgba(#fff, .45)
+  font-weight: 300
+  font-size: 15px
+
+.phone
+  font-size: 23px
+  font-weight: bold
+  color: #fff
+
+.mail
+  color: #fff
+  font-weight: bold
+  font-size: 20px
+  margin: 0 0 34px
+
+.footer-menu__links
+  font-size: 17px
+  font-weight: 500
+  color: #fff
+  &:hover
+    color: #1E9BF9
+
+
+
+.footer-menu__item
+  margin: 0 0 20px
+  &:last-child
+    margin: 0
+
+.copyright
+  width: 183px
+  position: relative
+  font-size: 9px
+  font-weight: 500
+  p
+    position: absolute
+    bottom: 0
+    left: 63px
+  img
+    width: 100%
+
+.list-social
+  display: flex
+  align-items: center
+  margin: 0 0 54px
+  li
+    margin: 0 36px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 46px
+      height: 46px
+      display: flex
+      align-items: center
+      justify-content: center
+
+.menu-doc
+  display: flex
+  align-items: center
+  li
+    margin: 0 38px 0 0
+    &:last-child
+      margin: 0
+    a
+      position: relative
+      font-size: 15px
+      color: #fff
+      font-weight: 300
+      display: flex
+      align-items: center
+      &:before
+        content: '•'
+        display: inline-block
+        color: #1E9BF9
+        margin: 0 3px 0 0
+
+.footer-top__wrapper-bottom
+  width: 100%
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+
+@import "media"
+// Всегда в конце
