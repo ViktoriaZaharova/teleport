@@ -220,7 +220,7 @@ h3 {
   top: 0;
   z-index: 5;
   height: 100%;
-  width: 261px;
+  width: 100%;
   display: none;
   -webkit-box-shadow: 0 -10px 0 0 rgba(0, 0, 0, 0.66);
           box-shadow: 0 -10px 0 0 rgba(0, 0, 0, 0.66); }
@@ -366,7 +366,7 @@ header {
   cursor: pointer; }
 
 .main-home {
-  padding: 263px 0 27px;
+  padding: 263px 0 285px;
   color: #fff; }
 
 main {
@@ -609,16 +609,17 @@ label {
     display: inline; }
 
 .ticker {
-  margin: 245px auto 0;
   width: 100%;
-  z-index: 1;
+  z-index: 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18px; }
+  font-size: 18px;
+  position: fixed;
+  bottom: 17px; }
 
 .name-currency {
   font-size: 18px;
@@ -1322,16 +1323,18 @@ footer {
     .tabs__caption li {
       height: 55px;
       width: 195px;
-      font-size: 15px; }
+      font-size: 15px;
+      background: rgba(5, 25, 62, 0.94); }
   main:before {
     display: none; }
   .main-home {
-    padding: 85px 0 20px; }
+    padding: 85px 0 48px; }
   .main-img {
     opacity: .37;
-    top: 0;
     -webkit-transform: translate(0);
-            transform: translate(0); }
+            transform: translate(0);
+    width: 530px;
+    top: 54px; }
   h1 {
     font-size: 34px; }
   h2 {
@@ -1340,12 +1343,14 @@ footer {
     display: none; }
   .main-bg-figure1 {
     width: 112px;
-    top: 186px;
-    left: 28px;
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg); }
+    height: 112px;
+    top: 189px;
+    left: -70px;
+    background: url("../img/figure-mob1.svg") no-repeat center;
+      background-size: contain; }
+    .main-bg-figure1 img {
+      display: none; }
   .ticker {
-    margin: 28px auto;
     background: #031539;
     font-size: 14px;
     padding: 7px 0; }
@@ -1366,7 +1371,7 @@ footer {
     .about .main-bg-figure2 img {
       display: none; }
   .about {
-    background: linear-gradient(60deg, #000525 0%, #0f4c81 100%);
+    background: linear-gradient(45deg, #000525 0%, #0f4c81 100%);
     padding: 0 0 49px; }
     .about .description {
       font-size: 14px;
@@ -1374,7 +1379,7 @@ footer {
   .capabilities {
     margin: 0; }
   .capabilities {
-    background: linear-gradient(105deg, #000525 0%, #0f4c81 100%); }
+    background: linear-gradient(115deg, #000525 0%, #0f4c81 100%); }
     .capabilities h2 {
       margin: 0 auto 50px; }
   .capabilities-box {
@@ -1425,9 +1430,9 @@ footer {
   .news-box__content .date {
     font-size: 17px; }
   .news:before {
-    background: linear-gradient(78deg, #000525 0%, #0f4c81 100%); }
+    background: linear-gradient(70deg, #000525 0%, #0f4c81 100%); }
   .footer-top:before {
-    background: linear-gradient(116deg, #000525 0%, #0f4c81 100%); }
+    background: linear-gradient(135deg, #000525 0%, #0f4c81 100%); }
   footer .exchange-wrapper {
     height: 53px; }
     footer .exchange-wrapper .btn {
@@ -1501,15 +1506,29 @@ footer {
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 450px) {
   .capabilities {
-    padding: 0 0 45px; }
-    .capabilities h2 img {
-      width: 120px; }
+    padding: 0 0 45px;
+    background: linear-gradient(125deg, #000525 0%, #0f4c81 100%); }
+    .capabilities h2 {
+      font-size: 35px; }
+      .capabilities h2 img {
+        width: 160px;
+        margin: 0 2px -10px 5px; }
+  .capabilities-box .text {
+    font-weight: 300; }
+  .capabilities-box:first-child .capabilities-icon {
+    top: -35px; }
   .news {
     margin: 0; }
     .news:before {
       top: 0;
       height: 100%;
-      background: linear-gradient(80deg, #000525 0%, #0f4c81 100%); } }
+      background: linear-gradient(70deg, #000525 0%, #0f4c81 100%); }
+  .footer-top:before {
+    background: linear-gradient(125deg, #000525 0%, #0f4c81 100%); } }
+
+@media only screen and (max-width: 420px) {
+  .container {
+    padding: 0 11px; } }
 
 @media only screen and (max-width: 400px) {
   .capabilities-box h3 {
@@ -1528,8 +1547,7 @@ footer {
     .language-box__btn .ui-selectmenu-text {
       font-size: 14px; }
   .main-img {
-    width: 400px;
-    top: 50px; }
+    right: -200px; }
   .exchange-box {
     width: 50%; }
   .exchange-box, .val-exchange {
@@ -1539,7 +1557,7 @@ footer {
   .about-img {
     top: 0; }
   .capabilities {
-    background: linear-gradient(110deg, #000525 0%, #0f4c81 100%); }
+    background: linear-gradient(125deg, #000525 0%, #0f4c81 100%); }
     .capabilities h2 {
       font-size: 28px; }
       .capabilities h2 img {
@@ -1556,4 +1574,8 @@ footer {
   .footer-top__wrapper-bottom {
     margin: 0; }
   .menu-doc li {
-    margin: 0 10px 0 0; } }
+    margin: 0 10px 0 0; }
+  h1 {
+    font-size: 32px; }
+  .description-exchange {
+    max-width: 150px; } }

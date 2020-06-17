@@ -313,17 +313,19 @@
       height: 55px
       width: 195px
       font-size: 15px
+      background: rgba(#05193E, .94)
 
   main:before
     display: none
 
   .main-home
-    padding: 85px 0 20px
+    padding: 85px 0 48px
 
   .main-img
     opacity: .37
-    top: 0
     transform: translate(0)
+    width: 530px
+    top: 54px
 
   h1
     font-size: 34px
@@ -336,12 +338,15 @@
 
   .main-bg-figure1
     width: 112px
-    top: 186px
-    left: 28px
-    transform: rotate(-20deg)
+    height: 112px
+    top: 189px
+    left: -70px
+    background: url('../img/figure-mob1.svg') no-repeat center
+      size: contain
+    img
+      display: none
 
   .ticker
-    margin: 28px auto
     background: #031539
     font-size: 14px
     padding: 7px 0
@@ -367,7 +372,7 @@
       display: none
 
   .about
-    background: linear-gradient(60deg, #000525 0%, #0f4c81 100%)
+    background: linear-gradient(45deg, #000525 0%, #0f4c81 100%)
     padding: 0 0 49px
     .description
       font-size: 14px
@@ -377,7 +382,7 @@
     margin: 0
 
   .capabilities
-    background: linear-gradient(105deg, #000525 0%, #0f4c81 100%)
+    background: linear-gradient(115deg, #000525 0%, #0f4c81 100%)
     h2
       margin: 0 auto 50px
 
@@ -430,10 +435,10 @@
     font-size: 17px
 
   .news:before
-    background: linear-gradient(78deg, #000525 0%, #0f4c81 100%)
+    background: linear-gradient(70deg, #000525 0%, #0f4c81 100%)
 
   .footer-top:before
-    background: linear-gradient(116deg, #000525 0%, #0f4c81 100%)
+    background: linear-gradient(135deg, #000525 0%, #0f4c81 100%)
 
   footer
     .exchange-wrapper
@@ -514,16 +519,35 @@
 @media only screen and (max-width: 450px)
   .capabilities
     padding: 0 0 45px
+    background: linear-gradient(125deg, #000525 0%, #0f4c81 100%)
     h2
+      font-size: 35px
       img
-        width: 120px
+        width: 160px
+        margin: 0 2px -10px 5px
+
+  .capabilities-box .text
+    font-weight: 300
+
+
+  .capabilities-box
+    &:first-child
+      .capabilities-icon
+        top: -35px
 
   .news
     margin: 0
     &:before
       top: 0
       height: 100%
-      background: linear-gradient(80deg, #000525 0%, #0f4c81 100%)
+      background: linear-gradient(70deg, #000525 0%, #0f4c81 100%)
+
+  .footer-top:before
+    background: linear-gradient(125deg, #000525 0%, #0f4c81 100%)
+
+@media only screen and (max-width: 420px)
+  .container
+    padding: 0 11px
 
 @media only screen and (max-width: 400px)
   .capabilities-box h3
@@ -534,6 +558,8 @@
     font-size: 32px
     img
       margin: 0 10px -6px
+
+
 
 
 
@@ -548,8 +574,7 @@
       font-size: 14px
 
   .main-img
-    width: 400px
-    top: 50px
+    right: -200px
 
   .exchange-box
     width: 50%
@@ -564,7 +589,7 @@
     top: 0
 
   .capabilities
-    background: linear-gradient(110deg, #000525 0%, #0f4c81 100%)
+    background: linear-gradient(125deg, #000525 0%, #0f4c81 100%)
     h2
       font-size: 28px
       img
@@ -588,4 +613,10 @@
 
   .menu-doc li
     margin: 0 10px 0 0
+
+  h1
+    font-size: 32px
+
+  .description-exchange
+    max-width: 150px
 
