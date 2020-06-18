@@ -286,15 +286,47 @@ header
 .dropDown-wrapper
   position: relative
 
+#ui-id-2-menu
+  border: 1px solid #fff
+    top: none
+    radius: 0 0 5px 5px
+
+.language-box
+  border:
+    right: 1px solid rgba(#fff, .15)
+  padding: 0 20px 0 0
+  margin: 0 23px 0 0
+  .currency-box .ui-button
+    font-size: 15px
+    .ui-selectmenu-text
+      margin: 0 5px 0 0
+  .ui-selectmenu-button.ui-button
+    padding: 5px 1em 3px .4em !important
+    border: 1px solid transparent
+      bottom: none
+      radius: 5px 5px 0 0
+    box-sizing: border-box
+
+  .currency-box .ui-button:focus, .currency-box .ui-button:hover
+    border: 1px solid transparent
+      bottom: none
+      radius: 5px 5px 0 0
+
+
 .language-box__btn
   font-size: 15px
   font-weight: bold
   color: #fff
-  padding: 0 20px 0 0
-  margin: 0 23px 0 0
-  border:
-    right: 1px solid rgba(#fff, .15)
   cursor: pointer
+  position: relative
+
+.language-box.open
+  .ui-selectmenu-button.ui-button
+    border-color: #fff
+    background: rgba(255, 255, 255, 0.27)
+  .currency-box .ui-button:focus
+    border-color: #fff
+
 
 //main
 .main-home
@@ -443,6 +475,11 @@ main
     .ui-selectmenu-text
       margin: 0 10px 0 0
       order: 1
+
+.ui-state-active, .ui-widget-content .ui-state-active
+  border: none
+
+
 
 
 .ui-widget.ui-widget-content

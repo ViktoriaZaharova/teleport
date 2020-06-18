@@ -25,3 +25,16 @@ $('.btn-open').click(function () {
 $('.btn-close').click(function () {
     $('.mobile-menu').fadeOut();
 });
+
+$('.language-box').click(function () {
+   $(this).toggleClass('open');
+});
+
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".language-box"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.removeClass('open'); // скрываем его
+    }
+});

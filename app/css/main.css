@@ -356,14 +356,44 @@ header {
 .dropDown-wrapper {
   position: relative; }
 
+#ui-id-2-menu {
+  border: 1px solid #fff;
+    border-top: none;
+    border-radius: 0 0 5px 5px; }
+
+.language-box {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0 20px 0 0;
+  margin: 0 23px 0 0; }
+  .language-box .currency-box .ui-button {
+    font-size: 15px; }
+    .language-box .currency-box .ui-button .ui-selectmenu-text {
+      margin: 0 5px 0 0; }
+  .language-box .ui-selectmenu-button.ui-button {
+    padding: 5px 1em 3px .4em !important;
+    border: 1px solid transparent;
+      border-bottom: none;
+      border-radius: 5px 5px 0 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .language-box .currency-box .ui-button:focus, .language-box .currency-box .ui-button:hover {
+    border: 1px solid transparent;
+      border-bottom: none;
+      border-radius: 5px 5px 0 0; }
+
 .language-box__btn {
   font-size: 15px;
   font-weight: bold;
   color: #fff;
-  padding: 0 20px 0 0;
-  margin: 0 23px 0 0;
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
+
+.language-box.open .ui-selectmenu-button.ui-button {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.27); }
+
+.language-box.open .currency-box .ui-button:focus {
+  border-color: #fff; }
 
 .main-home {
   padding: 263px 0 285px;
@@ -550,6 +580,9 @@ main {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+  border: none; }
 
 .ui-widget.ui-widget-content {
   border: none;
@@ -1218,7 +1251,7 @@ footer {
       margin: 0 auto 0 0; }
     header .btn, header .links {
       display: none; }
-  .language-box__btn {
+  .language-box {
     margin: 0 17px 0 0; }
   .about .main-bg-figure1 {
     width: 700px;
@@ -1542,9 +1575,9 @@ footer {
 @media only screen and (max-width: 380px) {
   .logo {
     width: 133px; }
-  .language-box__btn {
+  .language-box {
     padding: 0 12px 0 0; }
-    .language-box__btn .ui-selectmenu-text {
+    .language-box .ui-selectmenu-text {
       font-size: 14px; }
   .main-img {
     right: -200px; }
