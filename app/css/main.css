@@ -508,7 +508,12 @@ main {
     border-radius: 0 20px 20px 0;
     width: 235px;
     border: 1px solid #1E9BF9;
-    height: 100%; }
+    height: 100%;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .exchange-wrapper button.btn {
+    border: none; }
 
 .exchange-box {
   border: 1px solid #fff;
@@ -1150,10 +1155,12 @@ footer {
 
 @media only screen and (max-width: 1260px) {
   .capabilities-box {
-    width: 350px; }
+    width: 300px; }
   h3 {
     font-size: 32px;
-    line-height: normal; } }
+    line-height: normal; }
+  .news-box {
+    height: auto; } }
 
 @media only screen and (max-width: 1199px) {
   .menu-item {
@@ -1201,17 +1208,14 @@ footer {
   .about .btn {
     margin: 0 auto; }
   .capabilities-box {
-    width: 50%;
     margin: 0 0 30px; }
   .capabilities-content {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
   .capabilities {
-    background: linear-gradient(120deg, #000525 0%, #0f4c81 100%); }
+    background: linear-gradient(130deg, #000525 0%, #0f4c81 100%); }
   .news .main-bg-figure1, .news .main-bg-figure2 {
     display: none; }
-  .news-box {
-    max-width: 49%; }
   .news-wrapper {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
@@ -1223,7 +1227,7 @@ footer {
     width: 100%;
     height: calc(100% - 80px);
     top: 80px;
-    background: linear-gradient(60deg, #000525 0%, #0f4c81 100%);
+    background: linear-gradient(45deg, #000525 0%, #0f4c81 100%);
     content: '';
     position: absolute; }
   .subscribe-box {
@@ -1238,7 +1242,7 @@ footer {
     display: none; } }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1024px) {
   .btn-burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1256,59 +1260,7 @@ footer {
   .about .main-bg-figure1 {
     width: 700px;
     height: 700px;
-    top: -148px; } }
-
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 45px; }
-  h2 {
-    font-size: 45px; } }
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 710px) {
-  .capabilities h2 img {
-    width: 160px;
-    margin: 0 10px -14px; }
-  h3 {
-    font-size: 30px; }
-  .news-box {
-    max-width: 100%;
-    height: auto; }
-  .news-box__img {
-    height: 112px;
-    min-height: 112px; }
-  .news-box__content {
-    padding: 18px 22px; }
-    .news-box__content h3 {
-      margin: 0 0 9px; }
-  .news-box .btn {
-    height: 56px;
-    min-height: 56px;
-    font-size: 17px; }
-  .news h2 {
-    font-size: 41px;
-    margin: 0 0 14px; }
-  .news .line-title {
-    margin: 0 0 57px; }
-    .news .line-title .btn {
-      background: transparent;
-      height: 55px;
-      border: 1px solid #fff;
-      font-size: 15px;
-      margin: 0 auto;
-      max-width: 390px;
-      width: 100%; }
-      .news .line-title .btn span:after {
-        display: none; }
-  .news .description-title {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin: 20px 0 0;
-    max-width: none;
-    font-weight: 300; } }
-
-@media only screen and (max-width: 620px) {
+    top: -148px; }
   .exchange-wrapper .btn {
     display: none; }
   .tabs__content .d-mobile {
@@ -1319,7 +1271,8 @@ footer {
     margin: 16px auto 0;
     height: 55px;
     border-radius: 20px;
-    font-size: 17px; }
+    font-size: 17px;
+    border: none; }
   .tabs__content {
     max-width: 390px; }
   .exchange-box:nth-child(2) {
@@ -1410,11 +1363,18 @@ footer {
       font-size: 14px;
       line-height: normal; }
   .capabilities {
-    margin: 0; }
-  .capabilities {
-    background: linear-gradient(115deg, #000525 0%, #0f4c81 100%); }
+    background: linear-gradient(128deg, #000525 0%, #0f4c81 100%);
+    margin: 0;
+    padding: 0 0 45px; }
     .capabilities h2 {
       margin: 0 auto 50px; }
+      .capabilities h2 img {
+        width: 160px;
+        margin: 0 10px -14px; }
+  .capabilities-content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .capabilities-box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1428,25 +1388,26 @@ footer {
     .capabilities-box:last-child {
       margin: 0; }
     .capabilities-box h3 {
-      max-width: 267px;
+      width: calc(100% - 100px);
       margin: 0 auto 30px 0; }
     .capabilities-box .text {
       max-width: none; }
     .capabilities-box:nth-child(2) {
-      margin: 0 0 30px; }
+      margin: 0 0 68px; }
       .capabilities-box:nth-child(2) .btn {
         display: none; }
       .capabilities-box:nth-child(2) .capabilities-icon {
         right: auto;
         left: 20px; }
       .capabilities-box:nth-child(2) h3 {
-        margin: 0 0 30px auto; }
+        margin: 0 0 50px auto; }
     .capabilities-box:last-child .btn {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       width: 100%;
-      margin: 29px 0 0;
+      max-width: 390px;
+      margin: 29px auto 0;
       height: 55px;
       font-size: 17px;
       border-radius: 20px; }
@@ -1462,10 +1423,37 @@ footer {
     border-radius: 0 0 20px 20px; }
   .news-box__content .date {
     font-size: 17px; }
-  .news:before {
-    background: linear-gradient(70deg, #000525 0%, #0f4c81 100%); }
+  .news {
+    margin: 0; }
+    .news:before {
+      top: 0;
+      height: 100%;
+      background: linear-gradient(65deg, #000525 0%, #0f4c81 100%); }
+    .news h2 {
+      font-size: 41px;
+      margin: 0 0 14px; }
+    .news .line-title {
+      margin: 0 auto 57px; }
+      .news .line-title .btn {
+        background: transparent;
+        height: 55px;
+        border: 1px solid #fff;
+        font-size: 15px;
+        margin: 0 auto;
+        max-width: 390px;
+        width: 100%;
+        border-radius: 6px; }
+        .news .line-title .btn span:after {
+          display: none; }
+    .news .description-title {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      margin: 20px 0 0;
+      max-width: none;
+      font-weight: 300; }
   .footer-top:before {
-    background: linear-gradient(135deg, #000525 0%, #0f4c81 100%); }
+    background: linear-gradient(140deg, #000525 0%, #0f4c81 100%); }
   footer .exchange-wrapper {
     height: 53px; }
     footer .exchange-wrapper .btn {
@@ -1505,7 +1493,31 @@ footer {
     font-size: 14px;
     line-height: 25px; }
   .subscribe-box h3 {
-    margin: 0 0 27px; } }
+    margin: 0 0 27px; }
+  h3 {
+    font-size: 30px; }
+  .news-box {
+    max-width: 100%;
+    height: auto; }
+  .news-box__img {
+    height: 112px;
+    min-height: 112px; }
+  .news-box__content {
+    padding: 18px 22px; }
+    .news-box__content h3 {
+      margin: 0 0 9px; }
+  .news-box .btn {
+    height: 56px;
+    min-height: 56px;
+    font-size: 17px; } }
+
+@media only screen and (max-width: 700px) {
+  .capabilities {
+    background: linear-gradient(123deg, #000525 0%, #0f4c81 100%); }
+  .news:before {
+    background: linear-gradient(70deg, #000525 0%, #0f4c81 100%); }
+  .footer-top:before {
+    background: linear-gradient(135deg, #000525 0%, #0f4c81 100%); } }
 
 @media only screen and (max-width: 500px) {
   .footer-top__wrapper-bottom {
@@ -1534,18 +1546,18 @@ footer {
   .footer-top {
     padding: 0 0 98px; }
     .footer-top:before {
-      background: linear-gradient(111deg, #000525 0%, #0f4c81 100%); } }
+      background: linear-gradient(111deg, #000525 0%, #0f4c81 100%); }
+  .capabilities h2 {
+    font-size: 35px; }
+    .capabilities h2 img {
+      width: 160px;
+      margin: 0 2px -10px 5px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 450px) {
   .capabilities {
     padding: 0 0 45px;
     background: linear-gradient(125deg, #000525 0%, #0f4c81 100%); }
-    .capabilities h2 {
-      font-size: 35px; }
-      .capabilities h2 img {
-        width: 160px;
-        margin: 0 2px -10px 5px; }
   .capabilities-box .text {
     font-weight: 300; }
   .capabilities-box:first-child .capabilities-icon {
@@ -1570,7 +1582,9 @@ footer {
   .capabilities h2 {
     font-size: 32px; }
     .capabilities h2 img {
-      margin: 0 10px -6px; } }
+      margin: 0 10px -6px; }
+  .about-img {
+    top: -30px; } }
 
 @media only screen and (max-width: 380px) {
   .logo {
@@ -1587,8 +1601,6 @@ footer {
     font-size: 12px; }
   .val-label {
     width: 60px; }
-  .about-img {
-    top: 0; }
   .capabilities {
     background: linear-gradient(125deg, #000525 0%, #0f4c81 100%); }
     .capabilities h2 {

@@ -47,11 +47,14 @@
 
 @media only screen and (max-width: 1260px)
   .capabilities-box
-    width: 350px
+    width: 300px
 
   h3
     font-size: 32px
     line-height: normal
+
+  .news-box
+    height: auto
 
 @media only screen and (max-width: 1199px)
   .menu-item
@@ -120,20 +123,18 @@
     margin: 0 auto
 
   .capabilities-box
-    width: 50%
     margin: 0 0 30px
 
   .capabilities-content
     justify-content: space-around
 
   .capabilities
-    background: linear-gradient(120deg, #000525 0%, #0f4c81 100%)
+    background: linear-gradient(130deg, #000525 0%, #0f4c81 100%)
 
   .news .main-bg-figure1, .news .main-bg-figure2
     display: none
 
-  .news-box
-    max-width: 49%
+
 
   .news-wrapper
     justify-content: space-around
@@ -149,7 +150,7 @@
       width: 100%
       height: calc(100% - 80px)
       top: 80px
-      background: linear-gradient(60deg, rgba(0,5,37,1) 0%,rgba(15,76,129,1) 100%)
+      background: linear-gradient(45deg, rgba(0,5,37,1) 0%,rgba(15,76,129,1) 100%)
       content: ''
       position: absolute
 
@@ -169,7 +170,7 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width: 920px)
+@media only screen and (max-width: 1024px)
   .btn-burger
     display: flex
 
@@ -193,66 +194,6 @@
     height: 700px
     top: -148px
 
-@media only screen and (max-width: 768px)
-  h1
-    font-size: 45px
-
-  h2
-    font-size: 45px
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 710px)
-  .capabilities h2 img
-    width: 160px
-    margin: 0 10px -14px
-
-  h3
-    font-size: 30px
-
-  .news-box
-    max-width: 100%
-    height: auto
-
-  .news-box__img
-    height: 112px
-    min-height: 112px
-
-  .news-box__content
-    padding: 18px 22px
-    h3
-      margin: 0 0 9px
-
-  .news-box .btn
-    height: 56px
-    min-height: 56px
-    font-size: 17px
-
-  .news
-    h2
-      font-size: 41px
-      margin: 0 0 14px
-    .line-title
-      margin: 0 0 57px
-      .btn
-        background: transparent
-        height: 55px
-        border: 1px solid #fff
-        font-size: 15px
-        margin: 0 auto
-        max-width: 390px
-        width: 100%
-        span
-          &:after
-            display: none
-    .description-title
-      order: 1
-      margin: 20px 0 0
-      max-width: none
-      font-weight: 300
-
-
-@media only screen and (max-width: 620px)
   .exchange-wrapper .btn
     display: none
 
@@ -263,7 +204,7 @@
     height: 55px
     border-radius: 20px
     font-size: 17px
-
+    border: none
 
   .tabs__content
     max-width: 390px
@@ -378,13 +319,19 @@
       font-size: 14px
       line-height: normal
 
-  .capabilities
-    margin: 0
 
   .capabilities
-    background: linear-gradient(115deg, #000525 0%, #0f4c81 100%)
+    background: linear-gradient(128deg, #000525 0%, #0f4c81 100%)
+    margin: 0
+    padding: 0 0 45px
     h2
       margin: 0 auto 50px
+      img
+        width: 160px
+        margin: 0 10px -14px
+
+  .capabilities-content
+    justify-content: flex-start
 
   .capabilities-box
     flex-direction: row
@@ -396,24 +343,26 @@
     &:last-child
       margin: 0
     h3
-      max-width: 267px
+      width: calc(100% - 100px)
       margin: 0 auto 30px 0
     .text
       max-width: none
     &:nth-child(2)
-      margin: 0 0 30px
+      margin: 0 0 68px
       .btn
         display: none
       .capabilities-icon
         right: auto
         left: 20px
+
       h3
-        margin: 0 0 30px auto
+        margin: 0 0 50px auto
     &:last-child
       .btn
         display: flex
         width: 100%
-        margin: 29px 0 0
+        max-width: 390px
+        margin: 29px auto 0
         height: 55px
         font-size: 17px
         border-radius: 20px
@@ -434,11 +383,37 @@
   .news-box__content .date
     font-size: 17px
 
-  .news:before
-    background: linear-gradient(70deg, #000525 0%, #0f4c81 100%)
+  .news
+    margin: 0
+    &:before
+      top: 0
+      height: 100%
+      background: linear-gradient(65deg, #000525 0%, #0f4c81 100%)
+    h2
+      font-size: 41px
+      margin: 0 0 14px
+    .line-title
+      margin: 0 auto 57px
+      .btn
+        background: transparent
+        height: 55px
+        border: 1px solid #fff
+        font-size: 15px
+        margin: 0 auto
+        max-width: 390px
+        width: 100%
+        border-radius: 6px
+        span
+          &:after
+            display: none
+    .description-title
+      order: 1
+      margin: 20px 0 0
+      max-width: none
+      font-weight: 300
 
   .footer-top:before
-    background: linear-gradient(135deg, #000525 0%, #0f4c81 100%)
+    background: linear-gradient(140deg, #000525 0%, #0f4c81 100%)
 
   footer
     .exchange-wrapper
@@ -493,6 +468,43 @@
     h3
       margin: 0 0 27px
 
+
+  h3
+    font-size: 30px
+
+
+
+  .news-box
+    max-width: 100%
+    height: auto
+
+  .news-box__img
+    height: 112px
+    min-height: 112px
+
+  .news-box__content
+    padding: 18px 22px
+    h3
+      margin: 0 0 9px
+
+  .news-box .btn
+    height: 56px
+    min-height: 56px
+    font-size: 17px
+
+
+
+
+@media only screen and (max-width: 700px)
+  .capabilities
+    background: linear-gradient(123deg, #000525 0%, #0f4c81 100%)
+
+  .news:before
+    background: linear-gradient(70deg, #000525 0%, #0f4c81 100%)
+
+  .footer-top:before
+    background: linear-gradient(135deg, #000525 0%, #0f4c81 100%)
+
 @media only screen and (max-width: 500px)
   .footer-top__wrapper-bottom
     flex-direction: column
@@ -515,16 +527,20 @@
     &:before
       background: linear-gradient(111deg, #000525 0%, #0f4c81 100%)
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 450px)
   .capabilities
-    padding: 0 0 45px
-    background: linear-gradient(125deg, #000525 0%, #0f4c81 100%)
     h2
       font-size: 35px
       img
         width: 160px
         margin: 0 2px -10px 5px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 450px)
+  .capabilities
+    padding: 0 0 45px
+    background: linear-gradient(125deg, #000525 0%, #0f4c81 100%)
+
 
   .capabilities-box .text
     font-weight: 300
@@ -559,9 +575,8 @@
     img
       margin: 0 10px -6px
 
-
-
-
+  .about-img
+    top: -30px
 
 @media only screen and (max-width: 380px)
   .logo
@@ -585,8 +600,7 @@
   .val-label
     width: 60px
 
-  .about-img
-    top: 0
+
 
   .capabilities
     background: linear-gradient(125deg, #000525 0%, #0f4c81 100%)
